@@ -96,7 +96,7 @@ const ColorSelection = () => {
 							translateX={translateX}
 							onPress={(position) => {
 								translateX.value = withSpring(-index * COLOR_WIDTH);
-								setColorSelection(prev => ({
+								setColorSelection((prev) => ({
 									position,
 									previous: prev.current,
 									current: color,
